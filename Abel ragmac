@@ -16,5 +16,30 @@ int main() {
         
         int userChoice;
         std::cin >> userChoice;
+switch (userChoice) {
+            case 1:
+                std::cout << listFiles();
+                break;
+            case 2: {
+                std::cout << "Enter the name for the new directory: ";
+                std::string directoryName;
+                std::cin >> directoryName;
+                std::cout << makeDirectory(directoryName);
+                break;
+            }
+            case 3: {
+                std::cout << "Enter the directory to switch to: ";
+                std::string directoryName;
+                std::cin >> directoryName;
+                std::cout << switchDirectory(directoryName);
+                break;
+            }
+            case 4:
+                std::cout << "Exiting the program...\n";
+                return 0;
+            default:
+                std::cout << "Invalid option. Please try again.\n";
+        }
+        
 
         
