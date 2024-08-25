@@ -1,0 +1,20 @@
+#include <iostream>
+#include <string>
+
+std::string listFiles();
+std::string makeDirectory(const std::string& directoryName);
+std::string switchDirectory(const std::string& directoryName);
+
+int main() {
+    while (true) {
+        std::cout << "\nMAIN MENU\n";
+        std::cout << "1. List Files\n";
+        std::cout << "2. Make New Directory\n";
+        std::cout << "3. Switch Directory\n";
+        std::cout << "4. Exit Program\n";
+        std::cout << "Select an option: ";
+        
+        int userChoice;
+        std::cin >> userChoice;
+
+        
